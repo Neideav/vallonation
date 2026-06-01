@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  
+  --color-brand-primary: #ca8a04; /* Warm Gold */
+  --color-brand-secondary: #ea580c; /* Warm Orange */
+  --color-brand-accent: #f97316; /* Orange-500 */
+}
+
+/* Comfortable Light App theme */
+body {
+  font-family: var(--font-sans);
+  background-color: #fdfbf7; /* Warm soft off-white */
+  color: #334155; /* Slate 700 for high readability */
+  overflow-x: hidden;
+}
+
+pre, code {
+  font-family: var(--font-mono);
+}
+
+/* Soft clean custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.orange-gradient-bg {
+  background: linear-gradient(135deg, #fffcf9 0%, #fff7ed 50%, #ffedd5 100%);
+}
+
+.orange-banner-grad {
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+}
+
+.orange-glow-box {
+  box-shadow: 0 10px 30px -10px rgba(249, 115, 22, 0.12);
+}
+
+@keyframes gentlePulse {
+  0%, 100% { opacity: 0.8; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.02); }
+}
+
+.pulse-badge {
+  animation: gentlePulse 3s infinite ease-in-out;
+}

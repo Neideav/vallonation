@@ -1,0 +1,6 @@
+{
+  "name": "Vallonation",
+  "description": "Sovereign, ultra-fast real-time database with secure API access controls, low latency edge synchronization, and an interactive developer console.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
